@@ -1,0 +1,29 @@
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+
+export const config = { matcher: "/r/:path*" };
+
+export function middleware(request: NextRequest) {
+  const token = request.nextUrl.searchParams.get("token");
+  
+  // Allow all requests that have any Next.js-specific parameters or headers
+  const hasNextJsParams = request.nextUrl.searchParams.has("_rsc") ||
+                         request.nextUrl.searchParams.has("_next") ||
+                         request.nextUrl.searchParams.has("rsc");
+  
+  const hasNextJsHeaders = request.headers.get("x-nextjs-data") ||
+                          request.headers.get("next-router-prefetch") ||
+                          request.headers.get("next-router-state-tree") ||
+                          request.headers.get("rsc");
+  
+  if (hasNextJsParams || hasNextJsHeaders) {
+    return NextResponse.next();
+  }
+
+  // Only require token for direct browser access (no Next.js parameters)
+  if (token == null || token !== process.env.NEXT_PUBLIC_REGISTRY_AUTH_TOKEN) {
+    return new NextResponse("Unauthorized", { status: 401 });
+  }
+
+  return NextResponse.next();
+}
