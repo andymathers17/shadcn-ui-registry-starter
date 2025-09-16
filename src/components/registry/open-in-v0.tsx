@@ -40,6 +40,10 @@ export function OpenInV0Button({
 
   const handleClick = useCallback(
     (e: MouseEvent<HTMLButtonElement>) => {
+      // Debug: log the URL being generated
+      console.log("Generated v0 URL:", url);
+      console.log("Token available:", process.env.NEXT_PUBLIC_REGISTRY_AUTH_TOKEN ? "Yes" : "No");
+      
       if (process.env.NODE_ENV === "development") {
         e.preventDefault();
         toast.warning("You're on localhost", {
