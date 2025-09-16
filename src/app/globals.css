@@ -4,50 +4,50 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.97 0.01 80.72);
-  --foreground: oklch(0.3 0.04 30.2);
+  --background: oklch(0.9862 0.0068 247.89);
+  --foreground: oklch(0.2931 0 0);
 
-  --card: oklch(0.97 0.01 80.72);
-  --card-foreground: oklch(0.3 0.04 30.2);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2931 0 0);
 
-  --popover: oklch(0.97 0.01 80.72);
-  --popover-foreground: oklch(0.3 0.04 30.2);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2931 0 0);
 
-  --primary: oklch(0.52 0.13 144.17);
+  --primary: oklch(0.4937 0.1513 262.34);
   --primary-foreground: oklch(1.0 0 0);
 
-  --secondary: oklch(0.96 0.02 147.64);
-  --secondary-foreground: oklch(0.43 0.12 144.31);
+  --secondary: oklch(0.9165 0.0415 251.64);
+  --secondary-foreground: oklch(0.3449 0.1461 260.88);
 
-  --muted: oklch(0.94 0.01 74.42);
+  --muted: oklch(0.9165 0.0415 251.64);
   --muted-foreground: oklch(0.45 0.05 39.21);
 
-  --accent: oklch(0.9 0.05 146.04);
-  --accent-foreground: oklch(0.43 0.12 144.31);
+  --accent: oklch(0.9165 0.0415 251.64);
+  --accent-foreground: oklch(0.3449 0.1461 260.88);
 
-  --destructive: oklch(0.54 0.19 26.72);
+  --destructive: oklch(0.4719 0.193 29.04);
   --destructive-foreground: oklch(1.0 0 0);
 
-  --border: oklch(0.88 0.02 74.64);
+  --border: oklch(0.9067 0 0);
   --input: oklch(0.88 0.02 74.64);
-  --ring: oklch(0.52 0.13 144.17);
+  --ring: oklch(0.4937 0.1513 262.34);
 
-  --chart-1: oklch(0.67 0.16 144.21);
-  --chart-2: oklch(0.58 0.14 144.18);
-  --chart-3: oklch(0.52 0.13 144.17);
-  --chart-4: oklch(0.43 0.12 144.31);
-  --chart-5: oklch(0.22 0.05 145.73);
+  --chart-1: oklch(0.6656 0.1752 250.6);
+  --chart-2: oklch(0.6756 0.1449 132.25);
+  --chart-3: oklch(0.7497 0.168 57.27);
+  --chart-4: oklch(0.5155 0.1568 295.62);
+  --chart-5: oklch(0.8478 0.1564 83.93);
 
-  --sidebar: oklch(0.94 0.01 74.42);
-  --sidebar-foreground: oklch(0.3 0.04 30.2);
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.2931 0 0);
   --sidebar-primary: oklch(0.52 0.13 144.17);
   --sidebar-primary-foreground: oklch(1.0 0 0);
-  --sidebar-accent: oklch(0.9 0.05 146.04);
-  --sidebar-accent-foreground: oklch(0.43 0.12 144.31);
+  --sidebar-accent: oklch(0.9165 0.0415 251.64);
+  --sidebar-accent-foreground: oklch(0.3449 0.1461 260.88);
   --sidebar-border: oklch(0.88 0.02 74.64);
-  --sidebar-ring: oklch(0.52 0.13 144.17);
+  --sidebar-ring: oklch(0.4937 0.1513 262.34);
 
-  --radius: 0.5rem;
+  --radius: 0.35rem;
 }
 
 .dark {
@@ -140,6 +140,18 @@
   --font-serif: var(--font-serif);
   --font-mono: var(--font-mono);
 
+  /* Custom font sizes - smaller than default */
+  --text-xs: 0.625rem;    /* 10px */
+  --text-sm: 0.75rem;     /* 12px */
+  --text-base: 0.875rem;  /* 14px */
+  --text-lg: 1rem;        /* 16px */
+  --text-xl: 1.125rem;    /* 18px */
+  --text-2xl: 1.25rem;    /* 20px */
+  --text-3xl: 1.5rem;     /* 24px */
+  --text-4xl: 1.875rem;   /* 30px */
+  --text-5xl: 2.25rem;    /* 36px */
+  --text-6xl: 3rem;       /* 48px */
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -163,4 +175,18 @@
   ::file-selector-button {
     border-color: var(--color-border, currentColor);
   }
+}
+
+@layer utilities {
+  /* Override Tailwind's default font sizes to use our custom smaller sizes */
+  .text-xs { font-size: var(--text-xs) !important; }
+  .text-sm { font-size: var(--text-sm) !important; }
+  .text-base { font-size: var(--text-base) !important; }
+  .text-lg { font-size: var(--text-lg) !important; }
+  .text-xl { font-size: var(--text-xl) !important; }
+  .text-2xl { font-size: var(--text-2xl) !important; }
+  .text-3xl { font-size: var(--text-3xl) !important; }
+  .text-4xl { font-size: var(--text-4xl) !important; }
+  .text-5xl { font-size: var(--text-5xl) !important; }
+  .text-6xl { font-size: var(--text-6xl) !important; }
 }
