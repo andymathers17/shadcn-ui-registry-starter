@@ -16,7 +16,7 @@ export function Logo() {
         <circle className="fill-primary" cx="6.5" cy="13" r="2.5" />
       </svg>
 
-      {/* <h1 className="font-bold">ClearGov</h1> */}
+      <h1 className="font-bold">ClearGov</h1>
     </div>
   );
 }

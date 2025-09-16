@@ -45,11 +45,10 @@ export function OpenInV0Button({
       console.log("Token available:", process.env.NEXT_PUBLIC_REGISTRY_AUTH_TOKEN ? "Yes" : "No");
       
       e.preventDefault();
-      toast.info("Opening v0.dev", {
-        description:
-          "Please manually paste your registry URL into v0.dev to use your components.",
+      toast.info("Opening in v0.dev", {
+        description: "You'll need to sign in to Vercel to use v0.dev. The component will be pre-loaded after login.",
       });
-      window.open("https://v0.dev", "_blank", "noopener,noreferrer");
+      window.open(url, "_blank", "noopener,noreferrer");
     },
     [url],
   );
