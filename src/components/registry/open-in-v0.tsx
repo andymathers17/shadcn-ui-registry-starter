@@ -17,7 +17,7 @@ function buildV0Url(registryUrl: string, title?: string, prompt?: string) {
   }
 
   // Add authentication token for protected registry
-  const token = process.env.REGISTRY_AUTH_TOKEN;
+  const token = process.env.NEXT_PUBLIC_REGISTRY_AUTH_TOKEN;
   if (token != null) {
     params.append("token", token);
   }
