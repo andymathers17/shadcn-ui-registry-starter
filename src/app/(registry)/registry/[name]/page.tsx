@@ -45,7 +45,7 @@ export default async function RegistryItemPage({
 
       <ComponentCard
         component={component}
-        baseUrl={process.env.VERCEL_PROJECT_PRODUCTION_URL ?? ""}
+        baseUrl={process.env.VERCEL_PROJECT_PRODUCTION_URL ?? "shadcn-ui-registry-starter-sigma-seven.vercel.app"}
         prompt={getPrompt()}
       />
     </div>

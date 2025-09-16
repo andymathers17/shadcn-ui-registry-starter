@@ -148,7 +148,7 @@ export default function Home() {
             <code className="inline text-sm tabular-nums">tokens.css</code>
           </p>
 
-          <MCPTabs rootUrl={process.env.VERCEL_PROJECT_PRODUCTION_URL ?? ""} />
+          <MCPTabs rootUrl={process.env.VERCEL_PROJECT_PRODUCTION_URL ?? "shadcn-ui-registry-starter-sigma-seven.vercel.app"} />
         </div>
       </div>
 
