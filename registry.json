@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry",
   "name": "registry-starter",
-  "homepage": "https://registry-starter.vercel.app",
+  "homepage": "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/",
   "items": [
     {
       "name": "theme",
@@ -100,10 +100,10 @@
       "title": "Blank",
       "description": "A blank application with all brand components and code",
       "registryDependencies": [
-        "@registry-starter/theme",
-        "@registry-starter/brand-header",
-        "@registry-starter/brand-sidebar",
-        "@registry-starter/product-grid"
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme",
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/brand-header",
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/brand-sidebar",
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/product-grid"
       ],
       "files": [
         {
@@ -124,10 +124,10 @@
       "title": "Dashboard",
       "description": "A dashboard application with your brand themed components",
       "registryDependencies": [
-        "@registry-starter/theme",
-        "@registry-starter/sonner",
-        "@registry-starter/brand-header",
-        "@registry-starter/brand-sidebar"
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme",
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/sonner",
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/brand-header",
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/brand-sidebar"
       ],
       "files": [
         {
@@ -148,8 +148,8 @@
       "title": "Store",
       "description": "A store application with your brand themed components",
       "registryDependencies": [
-        "@registry-starter/theme",
-        "@registry-starter/product-grid"
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme",
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/product-grid"
       ],
       "files": [
         {
@@ -174,9 +174,9 @@
         "input",
         "avatar",
         "sidebar",
-        "@registry-starter/theme",
-        "@registry-starter/sonner",
-        "@registry-starter/logo"
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme",
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/sonner",
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/logo"
       ],
       "files": [
         {
@@ -204,8 +204,8 @@
         "badge",
         "button",
         "sidebar",
-        "@registry-starter/theme",
-        "@registry-starter/sonner"
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme",
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/sonner"
       ],
       "files": [
         {
@@ -232,8 +232,8 @@
       "registryDependencies": [
         "badge",
         "button",
-        "@registry-starter/theme",
-        "@registry-starter/logo"
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme",
+        "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/logo"
       ],
       "files": [
         {
@@ -257,7 +257,7 @@
       "type": "registry:component",
       "title": "Brand Logo",
       "description": "A styled, simple, reusable logo",
-      "registryDependencies": ["@registry-starter/theme"],
+      "registryDependencies": ["https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/components/logo.tsx",
@@ -280,7 +280,7 @@
       "type": "registry:component",
       "title": "Hero",
       "description": "Attention-grabbing section for the top of your landing pages.",
-      "registryDependencies": ["badge", "button", "@registry-starter/theme"],
+      "registryDependencies": ["badge", "button", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/components/hero.tsx",
@@ -303,7 +303,7 @@
       "type": "registry:component",
       "title": "Promo",
       "description": "Attention-grabbing section to display the current promotional deal.",
-      "registryDependencies": ["button", "@registry-starter/theme"],
+      "registryDependencies": ["button", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/components/promo.tsx",
@@ -326,7 +326,7 @@
       "type": "registry:component",
       "title": "Product Grid",
       "description": "Product grid displaying all products with API to fetch data",
-      "registryDependencies": ["@registry-starter/theme"],
+      "registryDependencies": ["https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/components/product-grid.tsx",
@@ -348,7 +348,7 @@
       "type": "registry:ui",
       "title": "Accordion",
       "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
-      "registryDependencies": ["accordion", "@registry-starter/theme"],
+      "registryDependencies": ["accordion", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -362,7 +362,7 @@
       "type": "registry:ui",
       "title": "Alert",
       "description": "Displays a callout for user attention.",
-      "registryDependencies": ["alert", "@registry-starter/theme"],
+      "registryDependencies": ["alert", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -376,7 +376,7 @@
       "type": "registry:ui",
       "title": "Avatar",
       "description": "An image element with a fallback for representing the user.",
-      "registryDependencies": ["avatar", "@registry-starter/theme"],
+      "registryDependencies": ["avatar", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -390,7 +390,7 @@
       "type": "registry:ui",
       "title": "Badge",
       "description": "Displays a small count or status indicator.",
-      "registryDependencies": ["badge", "@registry-starter/theme"],
+      "registryDependencies": ["badge", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -404,7 +404,7 @@
       "type": "registry:ui",
       "title": "Breadcrumb",
       "description": "Displays the path to the current resource using a hierarchy of links.",
-      "registryDependencies": ["breadcrumb", "@registry-starter/theme"],
+      "registryDependencies": ["breadcrumb", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -418,7 +418,7 @@
       "type": "registry:ui",
       "title": "Button",
       "description": "Allows users to take actions with a single click or tap.",
-      "registryDependencies": ["button", "@registry-starter/theme"],
+      "registryDependencies": ["button", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -432,7 +432,7 @@
       "type": "registry:ui",
       "title": "Calendar",
       "description": "A date field component that allows users to enter and edit date.",
-      "registryDependencies": ["calendar", "@registry-starter/theme"],
+      "registryDependencies": ["calendar", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -446,7 +446,7 @@
       "type": "registry:ui",
       "title": "Card",
       "description": "Containers for displaying content and actions about a single subject.",
-      "registryDependencies": ["card", "@registry-starter/theme"],
+      "registryDependencies": ["card", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -460,7 +460,7 @@
       "type": "registry:ui",
       "title": "Chart",
       "description": "Beautiful charts. Built using Recharts. Copy and paste into your apps.",
-      "registryDependencies": ["chart", "@registry-starter/theme"],
+      "registryDependencies": ["chart", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -474,7 +474,7 @@
       "type": "registry:ui",
       "title": "Checkbox",
       "description": "Allows users to select multiple items from a list of options.",
-      "registryDependencies": ["checkbox", "@registry-starter/theme"],
+      "registryDependencies": ["checkbox", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -488,7 +488,7 @@
       "type": "registry:ui",
       "title": "Data Table",
       "description": "Powerful table and datagrids built using TanStack Table.",
-      "registryDependencies": ["data-table", "@registry-starter/theme"],
+      "registryDependencies": ["data-table", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -502,7 +502,7 @@
       "type": "registry:ui",
       "title": "Date Picker",
       "description": "Displays the path to the current resource using a hierarchy of links.",
-      "registryDependencies": ["date-picker", "@registry-starter/theme"],
+      "registryDependencies": ["date-picker", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -516,7 +516,7 @@
       "type": "registry:ui",
       "title": "Dialog",
       "description": "A modal dialog that interrupts the user with important content.",
-      "registryDependencies": ["dialog", "@registry-starter/theme"],
+      "registryDependencies": ["dialog", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -530,7 +530,7 @@
       "type": "registry:ui",
       "title": "Dropdown",
       "description": "Displays a menu to the user triggered by a button.",
-      "registryDependencies": ["dropdown-menu", "@registry-starter/theme"],
+      "registryDependencies": ["dropdown-menu", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -544,7 +544,7 @@
       "type": "registry:ui",
       "title": "Input",
       "description": "Displays a form input field or a component that looks like an input field.",
-      "registryDependencies": ["input", "@registry-starter/theme"],
+      "registryDependencies": ["input", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -558,7 +558,7 @@
       "type": "registry:ui",
       "title": "Menu Bar",
       "description": "A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.",
-      "registryDependencies": ["menu-bar", "@registry-starter/theme"],
+      "registryDependencies": ["menu-bar", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -572,7 +572,7 @@
       "type": "registry:ui",
       "title": "Select",
       "description": "Displays a list of options for the user to pick from—triggered by a button.",
-      "registryDependencies": ["select", "@registry-starter/theme"],
+      "registryDependencies": ["select", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -586,7 +586,7 @@
       "type": "registry:ui",
       "title": "Separator",
       "description": "Visually or semantically separates content.",
-      "registryDependencies": ["separator", "@registry-starter/theme"],
+      "registryDependencies": ["separator", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -600,7 +600,7 @@
       "type": "registry:ui",
       "title": "Skeleton",
       "description": "Use to show a placeholder while content is loading.",
-      "registryDependencies": ["skeleton", "@registry-starter/theme"],
+      "registryDependencies": ["skeleton", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -614,7 +614,7 @@
       "type": "registry:ui",
       "title": "Slider",
       "description": "An input where the user selects a value from within a given range.",
-      "registryDependencies": ["slider", "@registry-starter/theme"],
+      "registryDependencies": ["slider", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -628,7 +628,7 @@
       "type": "registry:ui",
       "title": "Sonner",
       "description": "An opinionated toast component for React.",
-      "registryDependencies": ["sonner", "@registry-starter/theme"],
+      "registryDependencies": ["sonner", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -647,7 +647,7 @@
       "type": "registry:ui",
       "title": "Switch",
       "description": "A control that allows the user to toggle between checked and not checked.",
-      "registryDependencies": ["switch", "@registry-starter/theme"],
+      "registryDependencies": ["switch", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -661,7 +661,7 @@
       "type": "registry:ui",
       "title": "Table",
       "description": "A responsive table component.",
-      "registryDependencies": ["table", "@registry-starter/theme"],
+      "registryDependencies": ["table", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -675,7 +675,7 @@
       "type": "registry:ui",
       "title": "Tabs",
       "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-      "registryDependencies": ["tabs", "@registry-starter/theme"],
+      "registryDependencies": ["tabs", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -689,7 +689,7 @@
       "type": "registry:ui",
       "title": "Toggle Group",
       "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-      "registryDependencies": ["toggle-group", "@registry-starter/theme"],
+      "registryDependencies": ["toggle-group", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
@@ -703,7 +703,7 @@
       "type": "registry:ui",
       "title": "Tooltip",
       "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-      "registryDependencies": ["tooltip", "@registry-starter/theme"],
+      "registryDependencies": ["tooltip", "https://shadcn-ui-registry-starter-sigma-seven.vercel.app/theme"],
       "files": [
         {
           "path": "src/layouts/minimal-layout.tsx",
