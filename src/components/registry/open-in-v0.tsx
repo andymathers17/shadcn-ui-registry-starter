@@ -16,6 +16,12 @@ function buildV0Url(registryUrl: string, title?: string, prompt?: string) {
     params.append("prompt", prompt);
   }
 
+  // Add authentication token for protected registry
+  const token = process.env.REGISTRY_AUTH_TOKEN;
+  if (token != null) {
+    params.append("token", token);
+  }
+
   return `https://v0.dev/chat/api/open?${params.toString()}`;
 }
 
