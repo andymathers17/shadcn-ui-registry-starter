@@ -18,7 +18,7 @@ function buildV0Url(registryUrl: string, title?: string, prompt?: string) {
 
   // Add authentication token for protected registry
   const token = process.env.NEXT_PUBLIC_REGISTRY_AUTH_TOKEN;
-  if (token != null) {
+  if (token != null && token.trim() !== "") {
     params.append("token", token);
   }
 
@@ -44,15 +44,12 @@ export function OpenInV0Button({
       console.log("Generated v0 URL:", url);
       console.log("Token available:", process.env.NEXT_PUBLIC_REGISTRY_AUTH_TOKEN ? "Yes" : "No");
       
-      if (process.env.NODE_ENV === "development") {
-        e.preventDefault();
-        toast.warning("You're on localhost", {
-          description:
-            "Open in v0 does not work in development mode, please deploy first.",
-        });
-      } else {
-        window.open(url, "_blank", "noopener,noreferrer");
-      }
+      e.preventDefault();
+      toast.info("Opening v0.dev", {
+        description:
+          "Please manually paste your registry URL into v0.dev to use your components.",
+      });
+      window.open("https://v0.dev", "_blank", "noopener,noreferrer");
     },
     [url],
   );
