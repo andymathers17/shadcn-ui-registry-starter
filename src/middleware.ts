@@ -6,37 +6,20 @@ export const config = { matcher: "/r/:path*" };
 export function middleware(request: NextRequest) {
   const token = request.nextUrl.searchParams.get("token");
   
-  // Debug logging
-  console.log("Middleware request:", {
-    url: request.url,
-    hasRsc: request.nextUrl.searchParams.has("_rsc"),
-    rscValue: request.nextUrl.searchParams.get("_rsc"),
-    headers: Object.fromEntries(request.headers.entries())
-  });
+  // Allow requests with _rsc parameter (React Server Components)
+  if (request.nextUrl.searchParams.has("_rsc")) {
+    return NextResponse.next();
+  }
   
-  // Allow internal Next.js requests (RSC, prefetching, etc.)
-  // Check for various Next.js internal request patterns
-  const isInternalRequest = 
-    request.nextUrl.searchParams.has("_rsc") ||
-    request.headers.get("x-nextjs-data") ||
-    request.headers.get("rsc") ||
-    request.headers.get("next-router-prefetch") ||
-    request.headers.get("next-router-state-tree") ||
-    request.url.includes("_next/static") ||
-    request.url.includes("_next/data");
-  
-  console.log("Is internal request:", isInternalRequest);
-  
-  if (isInternalRequest) {
-    console.log("Allowing internal request");
+  // Allow requests with _nextjs-data header (Next.js internal)
+  if (request.headers.get("x-nextjs-data")) {
     return NextResponse.next();
   }
 
+  // Require token for all other requests
   if (token == null || token !== process.env.NEXT_PUBLIC_REGISTRY_AUTH_TOKEN) {
-    console.log("Blocking request - no valid token");
     return new NextResponse("Unauthorized", { status: 401 });
   }
 
-  console.log("Allowing request with valid token");
   return NextResponse.next();
 }
