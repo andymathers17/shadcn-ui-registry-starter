@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Card className="mb-4 shadow-none">
+      <Card className="mb-4 card-shadow">
         <CardHeader className="space-y-1">
           <div className="flex items-center justify-between">
             <CardTitle>Blocks</CardTitle>
@@ -64,7 +64,7 @@ export default function Home() {
       </Card>
 
       <div className="mb-4 grid gap-6 md:grid-cols-2">
-        <Card className="shadow-none">
+        <Card className="card-shadow">
           <CardHeader className="space-y-1">
             <div className="flex items-center justify-between">
               <CardTitle>UI Primitives</CardTitle>
@@ -97,7 +97,7 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        <Card className="shadow-none">
+        <Card className="card-shadow">
           <CardHeader className="space-y-1">
             <div className="flex items-center justify-between">
               <CardTitle>Components</CardTitle>
