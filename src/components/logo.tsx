@@ -1,19 +1,19 @@
 export function Logo() {
   return (
     <div className="flex items-center gap-2">
-      <svg
+      <svg 
+        width="32" 
+        height="39" 
+        viewBox="0 0 89 108" 
+        fill="none" 
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
         className="size-8"
         role="graphics-symbol"
       >
-        <circle className="fill-primary" cx="13.5" cy="6.5" r="2.5" />
-        <circle className="fill-primary" cx="19" cy="13" r="2.5" />
-        <circle className="fill-primary" cx="13.5" cy="19.5" r="2.5" />
-        <circle className="fill-primary" cx="6.5" cy="13" r="2.5" />
+        <path 
+          d="M84.0446 87.9951C82.2715 68.6003 66.6683 53.5154 47.1643 52.0788V26.9373H58.8667V31.9656H79.4345V10.0566H65.959V5.74662H46.8096V0H41.845V52.0788C22.341 53.1562 7.09237 68.6003 4.96466 87.9951H0V107.39H89.0092V87.9951H84.0446Z" 
+          fill="#013183"
+        />
       </svg>
 
       <h1 className="font-bold">ClearGov</h1>
