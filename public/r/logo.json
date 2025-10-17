@@ -10,7 +10,7 @@
   "files": [
     {
       "path": "src/components/logo.tsx",
-      "content": "export function Logo() {\n  return (\n    <div className=\"flex items-center gap-2\">\n      <svg\n        xmlns=\"http://www.w3.org/2000/svg\"\n        viewBox=\"0 0 24 24\"\n        strokeWidth=\"2\"\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n        className=\"size-8\"\n        role=\"graphics-symbol\"\n      >\n        <circle className=\"fill-primary\" cx=\"13.5\" cy=\"6.5\" r=\"2.5\" />\n        <circle className=\"fill-primary\" cx=\"19\" cy=\"13\" r=\"2.5\" />\n        <circle className=\"fill-primary\" cx=\"13.5\" cy=\"19.5\" r=\"2.5\" />\n        <circle className=\"fill-primary\" cx=\"6.5\" cy=\"13\" r=\"2.5\" />\n      </svg>\n\n      <h1 className=\"font-bold\">ClearGov</h1>\n    </div>\n  );\n}\n",
+      "content": "export function Logo() {\n  return (\n    <div className=\"flex items-center gap-2\">\n      <svg \n        width=\"32\" \n        height=\"39\" \n        viewBox=\"0 0 89 108\" \n        fill=\"none\" \n        xmlns=\"http://www.w3.org/2000/svg\"\n        className=\"size-8\"\n        role=\"graphics-symbol\"\n      >\n        <path \n          d=\"M84.0446 87.9951C82.2715 68.6003 66.6683 53.5154 47.1643 52.0788V26.9373H58.8667V31.9656H79.4345V10.0566H65.959V5.74662H46.8096V0H41.845V52.0788C22.341 53.1562 7.09237 68.6003 4.96466 87.9951H0V107.39H89.0092V87.9951H84.0446Z\" \n          fill=\"#013183\"\n        />\n      </svg>\n\n      <h1 className=\"font-bold\">ClearGov</h1>\n    </div>\n  );\n}\n",
       "type": "registry:component"
     },
     {

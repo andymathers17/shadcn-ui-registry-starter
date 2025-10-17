@@ -22,7 +22,7 @@ export function BrandHeader() {
         <div className="flex items-center space-x-4">
           <Button
             variant="ghost"
-            size="icon"
+            size="icon-default"
             className="hidden size-8 md:flex"
             onClick={toggleSidebar}
           >
@@ -35,7 +35,7 @@ export function BrandHeader() {
 
           <Button
             variant="ghost"
-            size="icon"
+            size="icon-default"
             className="size-8 md:hidden"
             onClick={toggleSidebar}
           >

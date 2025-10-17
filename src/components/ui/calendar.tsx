@@ -194,7 +194,7 @@ function CalendarDayButton({
     <Button
       ref={ref}
       variant="ghost"
-      size="icon"
+      size="icon-default"
       data-day={day.date.toLocaleDateString()}
       data-selected-single={
         modifiers.selected &&
